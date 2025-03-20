@@ -3,77 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GLP Coin - A Memecoin do Futuro</title>
+    <title>GLP Coin - A Revolução da Memecoin</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+            color: white;
+            text-align: center;
         }
         header {
-            background: #ffcc00;
-            color: #222;
-            text-align: center;
             padding: 20px;
-            font-size: 24px;
+            font-size: 30px;
             font-weight: bold;
         }
-        section {
-            padding: 20px;
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 90vh;
+        }
+        .hero img {
+            width: 350px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            background: #ffcc00;
+            color: black;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #ffdd44;
+        }
+        .section {
+            padding: 50px 20px;
             max-width: 800px;
             margin: auto;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .cta {
-            text-align: center;
-            margin-top: 20px;
-        }
-        .cta a {
-            display: inline-block;
-            background: #ffcc00;
-            color: #222;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
         }
         footer {
-            text-align: center;
-            padding: 10px;
-            background: #222;
-            color: white;
-            margin-top: 20px;
+            padding: 20px;
+            background: #111;
+            margin-top: 30px;
         }
     </style>
 </head>
 <body>
-    <header>GLP Coin - A Memecoin Inspirada em Gusttavo Lima</header>
-    <section>
-        <h2>O que é a GLP Coin?</h2>
-        <p>A <strong>GLP Coin</strong> é uma memecoin inovadora lançada na blockchain Solana, inspirada na ideia de Gusttavo Lima como presidente do Brasil. Criada para engajamento comunitário e especulação, segue a tendência dos tokens virais.</p>
-        
-        <h2>Características Principais</h2>
-        <ul>
-            <li><strong>Blockchain:</strong> Solana</li>
-            <li><strong>Supply Total:</strong> 100 trilhões de tokens</li>
-            <li><strong>Taxas de Transação:</strong> Modelo sustentável e atrativo</li>
-            <li><strong>Alocação de Tokens:</strong> Marketing, equipe, airdrops e liquidez</li>
-        </ul>
-        
-        <h2>Como Comprar?</h2>
-        <p>A GLP Coin será listada em DEXs como Raydium e Orca. Fique ligado nas atualizações do projeto para saber os detalhes do lançamento.</p>
-        
-        <div class="cta">
-            <a href="#">Junte-se à Comunidade</a>
-        </div>
-    </section>
+    <header>GLP Coin - O Futuro das Memecoins</header>
+    
+    <div class="hero">
+        <img src="/mnt/data/A_patriotic_but_humorous_digital_illustration_comb.png" alt="GLP Coin">
+        <h1>O Token dos Verdadeiros Patriotas</h1>
+        <p>Inspirado na cultura popular brasileira e americana, a GLP Coin é mais do que um token, é um movimento!</p>
+        <a href="#" class="btn">Junte-se ao Movimento</a>
+    </div>
+    
+    <div class="section">
+        <h2>O Que é a GLP Coin?</h2>
+        <p>A GLP Coin é uma memecoin revolucionária baseada na blockchain Solana, misturando humor, cultura e potencial financeiro.</p>
+    </div>
+    
+    <div class="section">
+        <h2>Tokenomics</h2>
+        <p>Supply Total: 100 trilhões de tokens<br>
+        Distribuição: Marketing, Equipe, Airdrops e Liquidez</p>
+    </div>
+    
+    <div class="section">
+        <h2>Roadmap</h2>
+        <p>Lançamento, listagens em DEXs e muito mais! Fique ligado.</p>
+    </div>
     
     <footer>
         &copy; 2025 GLP Coin - Todos os direitos reservados.
     </footer>
+    
+    <script>
+        gsap.from(".hero img", { duration: 1, opacity: 0, scale: 0.8, ease: "bounce" });
+        gsap.from(".hero h1", { duration: 1.2, opacity: 0, y: -50, delay: 0.5 });
+        gsap.from(".hero p", { duration: 1.5, opacity: 0, y: 50, delay: 1 });
+        gsap.from(".btn", { duration: 1.8, opacity: 0, scale: 0.8, delay: 1.5 });
+    </script>
 </body>
 </html>

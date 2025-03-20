@@ -9,7 +9,8 @@
         body {
             margin: 0;
             font-family: 'Poppins', sans-serif;
-            background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+            background: url('/mnt/data/A_bold_and_dramatic_digital_painting_of_Gusttavo_L.png') no-repeat center center fixed;
+            background-size: cover;
             color: white;
             text-align: center;
         }
@@ -20,7 +21,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background: #111;
+            background: rgba(17, 17, 17, 0.8);
         }
         .nav {
             display: flex;
@@ -45,6 +46,8 @@
             align-items: center;
             justify-content: center;
             height: 90vh;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
         }
         .hero img {
             width: 400px;
@@ -71,10 +74,12 @@
             max-width: 900px;
             margin: auto;
             text-align: left;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
         }
         footer {
             padding: 20px;
-            background: #111;
+            background: rgba(17, 17, 17, 0.8);
             margin-top: 30px;
         }
     </style>
@@ -92,7 +97,6 @@
     </header>
     
     <div class="hero">
-        <img src="/mnt/data/A_patriotic_but_humorous_digital_illustration_comb.png" alt="GLP Coin">
         <h1>O Token da Revolução Popular</h1>
         <p>A GLP Coin nasceu para unir cultura popular e política de forma inovadora! Vamos movimentar o processo eleitoral trazendo Gusttavo Lima como candidato simbólico e mostrar o poder da comunidade sobre o destino do país.</p>
         <a href="#como-comprar" class="btn">Junte-se ao Movimento</a>
@@ -117,7 +121,6 @@
     </footer>
     
     <script>
-        gsap.from(".hero img", { duration: 1, opacity: 0, scale: 0.8, ease: "bounce" });
         gsap.from(".hero h1", { duration: 1.2, opacity: 0, y: -50, delay: 0.5 });
         gsap.from(".hero p", { duration: 1.5, opacity: 0, y: 50, delay: 1 });
         gsap.from(".btn", { duration: 1.8, opacity: 0, scale: 0.8, delay: 1.5 });

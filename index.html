@@ -17,6 +17,27 @@
             padding: 20px;
             font-size: 30px;
             font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #111;
+        }
+        .nav {
+            display: flex;
+            gap: 20px;
+        }
+        .nav a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .connect-wallet {
+            background: #ffcc00;
+            color: black;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
         }
         .hero {
             display: flex;
@@ -59,44 +80,36 @@
     </style>
 </head>
 <body>
-    <header>GLP Coin - O Futuro das Memecoins</header>
+    <header>
+        <div class="nav">
+            <a href="#sobre">Sobre</a>
+            <a href="#tokenomics">Tokenomics</a>
+            <a href="#roadmap">Roadmap</a>
+            <a href="#como-comprar">Como Comprar</a>
+            <a href="#comunidade">Comunidade</a>
+        </div>
+        <button class="connect-wallet">Conectar Carteira</button>
+    </header>
     
     <div class="hero">
         <img src="/mnt/data/A_patriotic_but_humorous_digital_illustration_comb.png" alt="GLP Coin">
         <h1>O Token da Revolução Popular</h1>
         <p>A GLP Coin nasceu para unir cultura popular e política de forma inovadora! Vamos movimentar o processo eleitoral trazendo Gusttavo Lima como candidato simbólico e mostrar o poder da comunidade sobre o destino do país.</p>
-        <a href="#" class="btn">Junte-se ao Movimento</a>
+        <a href="#como-comprar" class="btn">Junte-se ao Movimento</a>
     </div>
     
-    <div class="section">
-        <h2>O Que é a GLP Coin?</h2>
-        <p>A GLP Coin é mais do que uma memecoin – é um movimento. Inspirada na cultura sertaneja e na força da comunidade, essa criptomoeda busca impactar o processo eleitoral ao demonstrar o poder do povo sobre as decisões do país. Ao investir na GLP Coin, você não apenas faz parte dessa revolução, mas também pode lucrar com a valorização do token.</p>
+    <div id="como-comprar" class="section">
+        <h2>Como Comprar GLP Coin</h2>
+        <p>1. Baixe a carteira <a href="https://phantom.app/" target="_blank">Phantom</a> e crie uma conta.</p>
+        <p>2. Envie SOL para sua carteira.</p>
+        <p>3. Conecte sua carteira clicando no botão acima.</p>
+        <p>4. Acesse uma DEX como Raydium e compre GLP Coin.</p>
     </div>
     
-    <div class="section">
-        <h2>Por Que Investir?</h2>
-        <p>O Brasil vive um momento crucial, onde a cultura popular pode moldar os rumos políticos. A GLP Coin se baseia na ideia de que a especulação financeira e a mobilização coletiva podem gerar impacto real, permitindo que todos participem do jogo do poder.</p>
-        <p>Com uma estratégia bem definida e um grande engajamento da comunidade, a valorização da GLP Coin pode trazer lucros aos seus detentores, ao mesmo tempo que fortalece uma nova visão de apoio popular através da tecnologia blockchain.</p>
-    </div>
-    
-    <div class="section">
-        <h2>Tokenomics</h2>
-        <p><strong>Supply Total:</strong> 100 trilhões de tokens</p>
-        <p><strong>Distribuição:</strong></p>
-        <ul>
-            <li>Marketing e Crescimento: 40%</li>
-            <li>Equipe e Desenvolvimento: 20%</li>
-            <li>Airdrops e Incentivos: 20%</li>
-            <li>Liquidez e Reservas: 20%</li>
-        </ul>
-    </div>
-    
-    <div class="section">
-        <h2>Roadmap</h2>
-        <p><strong>Fase 1:</strong> Lançamento e Construção da Comunidade</p>
-        <p><strong>Fase 2:</strong> Listagens em DEXs como Raydium e Orca</p>
-        <p><strong>Fase 3:</strong> Ampliação da Narrativa e Marketing Internacional</p>
-        <p><strong>Fase 4:</strong> Desenvolvimento de Novas Aplicações para a GLP Coin</p>
+    <div class="section" id="comunidade">
+        <h2>Junte-se à Nossa Comunidade</h2>
+        <p>Fique por dentro das novidades e faça parte do movimento:</p>
+        <p><a href="#" target="_blank">📢 Telegram</a> | <a href="#" target="_blank">🐦 X (Twitter)</a></p>
     </div>
     
     <footer>
